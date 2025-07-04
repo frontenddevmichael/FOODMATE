@@ -12,6 +12,53 @@
     box-sizing: border-box;
 }
 
+/* Loader Styling */
+#loader {
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: linear-gradient(135deg, var(--lavender), var(--white));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.loader-logo {
+    font-size: 4rem;
+    animation: bounce 1.2s infinite;
+    color: var(--deep-pink);
+}
+
+.loader-text {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: var(--purple);
+    font-weight: 500;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Hide when done */
+body.loaded #loader {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
 .hero-icing {
     position: absolute;
     bottom: 0;
@@ -637,7 +684,7 @@ section {
 
 /* -------------------- CONTACT -------------------- */
 .contact {
-    background:white;
+    background: white;
     padding: 6rem 1rem;
 }
 
@@ -767,8 +814,8 @@ section {
     gap: 0.75rem;
     color: var(--text);
 }
-q
-.contact-details i {
+
+q .contact-details i {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -776,15 +823,17 @@ q
     aspect-ratio: 1/1;
     border-radius: 50%;
     background-color: #7D3C98;
-    color:white;
+    color: white;
     font-size: 1.2rem;
     transition: all .3s ease;
 }
+
 .contact-details i:hover {
     background-color: var(--deep-pink);
     color: var(--white);
     transform: translateY(-4px);
 }
+
 /* Responsive Fix */
 @media (max-width: 768px) {
     .ContactContent {
