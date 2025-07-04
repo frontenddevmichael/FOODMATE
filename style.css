@@ -13,10 +13,11 @@
 }
 
 /* Loader Styling */
+/* ---------------- THEMED PRELOADER ---------------- */
 #loader {
     position: fixed;
-    z-index: 9999;
     inset: 0;
+    z-index: 9999;
     background: linear-gradient(135deg, var(--lavender), var(--white));
     display: flex;
     flex-direction: column;
@@ -26,19 +27,21 @@
     transition: opacity 0.6s ease, visibility 0.6s ease;
 }
 
-.loader-logo {
+.loader-icon {
     font-size: 4rem;
-    animation: bounce 1.2s infinite;
+    animation: bounce 1.5s infinite;
     color: var(--deep-pink);
+    filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.1));
 }
 
-.loader-text {
+.loader-msg {
     margin-top: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: var(--purple);
     font-weight: 500;
 }
 
+/* Bouncing animation */
 @keyframes bounce {
 
     0%,
@@ -47,11 +50,11 @@
     }
 
     50% {
-        transform: translateY(-10px);
+        transform: translateY(-12px);
     }
 }
 
-/* Hide when done */
+/* Hide loader after page loads */
 body.loaded #loader {
     opacity: 0;
     visibility: hidden;
