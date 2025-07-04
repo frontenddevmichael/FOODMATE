@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOODmate | Pastries & Catering</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Dancing+Script&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="/app.js" defer></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <a href="#home" id="backtoTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    <nav class="nav">
+        <div class="logo">FOODmate</div>
+        <div class="nav-links">
+            <a href="#home" class="">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#faq">FAQ</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <i class="fas fa-bars" id="menuToggle"></i>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero snap" id="home">
+        <!-- Icing decoration -->
+        <!-- Hero SVG Icing -->
+        <div class="hero-icing">
+            <svg viewBox="0 0 200 60" class="icing-svg" preserveAspectRatio="none">
+                <path class="drip" d="M0,20 Q50,40 100,20 T200,20 V60 H0 Z" />
+                <path class="drip" d="M0,15 Q50,35 100,15 T200,15 V60 H0 Z" />
+                <path class="drip" d="M0,10 Q50,30 100,10 T200,10 V60 H0 Z" />
+            </svg>
+        </div>
+
+
+        <div class="hero-content reveal fade-in">
+            <h1>Deliciously Homemade. Perfectly Priced.</h1>
+            <p>From sweet pastries to full-service catering — FOODmate delivers taste, value, and heart in every bite.
+            </p>
+            <a href="#menu" class="btn">View Menu</a>
+            <a href="#contact" class="btn secondary">Book Catering</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about snap" id="about">
+        <div class="container" class="reveal fade-in" id="footer">
+            <h2 class="reveal">About Us</h2>
+            <p class="reveal">
+                At <strong>FOODmate</strong>, we believe great food doesn't have to come at a high price. With a deep
+                love for baking and a flair for catering, we bring you a blend of homemade charm and professional
+                quality. From delightful pastries to full-scale events, every dish we craft is made with care, flavor,
+                and a touch of magic — all at a price that makes sense.
+            </p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu snap" id="menu">
+        <div class="container">
+            <h2 class="reveal">Our Menu</h2>
+            <div class="menu-grid">
+                <!-- Menu Items with reveal classes -->
+                <div class="menu-item reveal">
+                    <i class="fas fa-birthday-cake"></i>
+                    <h3>Custom Cakes</h3>
+                    <p>Beautiful custom cakes for birthdays, weddings, and special occasions. Made fresh with premium
+                        ingredients.</p>
+                    <span class="price">From ₦15,000</span>
+                </div>
+                <div class="menu-item reveal">
+                    <i class="fas fa-cookie-bite"></i>
+                    <h3>Pastries & Cookies</h3>
+                    <p>Freshly baked croissants, muffins, cookies, and artisanal pastries. Perfect for breakfast or
+                        afternoon treats.</p>
+                    <span class="price">₦500 - ₦2,000</span>
+                </div>
+                <div class="menu-item reveal">
+                    <i class="fas fa-bread-slice"></i>
+                    <h3>Fresh Bread</h3>
+                    <p>Daily baked artisan breads, rolls, and specialty loaves. Made with natural ingredients and
+                        traditional methods.</p>
+                    <span class="price">₦800 - ₦3,500</span>
+                </div>
+                <div class="menu-item reveal">
+                    <i class="fas fa-pizza-slice"></i>
+                    <h3>Savory Pies</h3>
+                    <p>Meat pies, chicken pies, fish pies, and vegetarian options. Perfect for lunch or quick meals.</p>
+                    <span class="price">₦1,200 - ₦2,500</span>
+                </div>
+                <div class="menu-item reveal">
+                    <i class="fas fa-ice-cream"></i>
+                    <h3>Desserts</h3>
+                    <p>Indulgent desserts including puddings, trifles, and seasonal specialties. Sweet endings to
+                        perfect meals.</p>
+                    <span class="price">₦1,500 - ₦4,000</span>
+                </div>
+                <div class="menu-item reveal">
+                    <i class="fas fa-coffee"></i>
+                    <h3>Beverages</h3>
+                    <p>Fresh juices, smoothies, coffee, and specialty drinks. The perfect complement to our baked goods.
+                    </p>
+                    <span class="price">₦300 - ₦1,500</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services snap" id="services">
+        <div class="container">
+            <h2 class="reveal">Catering Services</h2>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Wedding Catering</h3>
+                    <p>Make your special day unforgettable with our elegant wedding catering packages. From intimate
+                        ceremonies to grand celebrations.</p>
+                </div>
+                <div class="service-card reveal">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Corporate Events</h3>
+                    <p>Professional catering for meetings, conferences, and corporate gatherings. Reliable service that
+                        impresses clients.</p>
+                </div>
+                <div class="service-card reveal">
+                    <i class="fas fa-heart"></i>
+                    <h3>Birthday Parties</h3>
+                    <p>Celebrate birthdays with delicious food and beautiful cakes. Custom menus for kids and adults of
+                        all ages.</p>
+                </div>
+                <div class="service-card reveal">
+                    <i class="fas fa-home"></i>
+                    <h3>Home Parties</h3>
+                    <p>Intimate gatherings made special with our homestyle catering. Perfect for family reunions and
+                        casual celebrations.</p>
+                </div>
+                <div class="service-card reveal">
+                    <i class="fas fa-truck"></i>
+                    <h3>Delivery Service</h3>
+                    <p>Fresh delivery to your doorstep. Hot meals, fresh pastries, and custom orders delivered with
+                        care.</p>
+                </div>
+                <div class="service-card reveal">
+                    <i class="fas fa-clock"></i>
+                    <h3>Last-Minute Orders</h3>
+                    <p>Need something urgently? We accommodate last-minute orders and emergency catering requests when
+                        possible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials snap" id="testimonials">
+        <div class="container">
+            <h2 class="reveal">What Our Customers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card reveal">
+                    <p>"Absolutely delicious pastries! The cake for my wedding was perfect."</p>
+                    <h4>— Sarah O.</h4>
+                </div>
+                <div class="testimonial-card reveal">
+                    <p>"Their customer service is just as good as their food. Highly recommend!"</p>
+                    <h4>— James K.</h4>
+                </div>
+                <div class="testimonial-card reveal">
+                    <p>"On-time delivery, quality meals. We use FOODmate for all our office events."</p>
+                    <h4>— Ada N.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery snap" id="gallery">
+        <div class="container">
+            <h2 class="reveal">Gallery</h2>
+            <div class="gallery-grid">
+                <img src="images/cake1.jpg" alt="Wedding cake" class="reveal">
+                <img src="images/pie.jpg" alt="Chicken pie" class="reveal">
+                <img src="images/bread.jpg" alt="Artisan bread" class="reveal">
+                <img src="images/table-setup.jpg" alt="Catering event setup" class="reveal">
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq snap" id="faq">
+        <div class="container">
+            <h2 class="reveal">Frequently Asked Questions</h2>
+            <div class="faq-item reveal">
+                <h4>Do you deliver outside Lagos?</h4>
+                <p>Yes, we deliver to select areas across Ogun and Lagos states. Call us for special arrangements.</p>
+            </div>
+            <div class="faq-item reveal">
+                <h4>How early should I book catering?</h4>
+                <p>We recommend booking 2 weeks in advance. However, we can accommodate urgent orders when possible.</p>
+            </div>
+            <div class="faq-item reveal">
+                <h4>Can I customize my cake?</h4>
+                <p>Absolutely! We offer custom designs, flavors, and decorations for birthdays, weddings, and other
+                    events.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing snap" id="pricing">
+        <div class="container">
+            <h2 class="reveal">Packages</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card reveal">
+                    <h3>Starter</h3>
+                    <p>Perfect for small gatherings</p>
+                    <ul>
+                        <li>10 meals</li>
+                        <li>1 custom cake</li>
+                        <li>Delivery included</li>
+                    </ul>
+                    <span class="price">₦35,000</span>
+                </div>
+                <div class="pricing-card featured reveal">
+                    <h3>Standard</h3>
+                    <p>Best for birthdays & events</p>
+                    <ul>
+                        <li>25 meals</li>
+                        <li>2 custom cakes</li>
+                        <li>Drinks included</li>
+                    </ul>
+                    <span class="price">₦75,000</span>
+                </div>
+                <div class="pricing-card reveal">
+                    <h3>Premium</h3>
+                    <p>Full-service catering</p>
+                    <ul>
+                        <li>50+ meals</li>
+                        <li>Event staff</li>
+                        <li>Decor & setup</li>
+                    </ul>
+                    <span class="price">₦150,000+</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <!-- Contact -->
+    <section class="contact snap" id="contact">
+        <div class="container">
+            <h2 class="reveal">Get in Touch</h2>
+
+            <p class="contact-intro reveal" style="max-width: 600px; margin-inline: auto;">
+                Have a question, custom request, or event inquiry? Our team is here to help you make your occasion
+                deliciously unforgettable. Fill out the form below and we’ll respond promptly within 24 hours.
+            </p>
+            <div class="ContactContent">
+
+                <!-- Contact Info Grid -->
+                <div class="contact-details reveal" style="display: grid; gap: 1rem; margin-top: 2rem;">
+                    <div><i class="fas fa-envelope"></i> <strong>Email:</strong> hello@foodmate.ng</div>
+                    <div>
+                        <i class="fab fa-whatsapp"></i>
+                        <strong>WhatsApp:</strong>
+                        <a href="https://wa.me/2347065368273" target="_blank" rel="noopener noreferrer">
+                            +234 706 536 8273
+                        </a>
+                    </div>
+
+                    <div><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Ikeja, Lagos, Nigeria</div>
+                    <div><i class="fas fa-clock"></i> <strong>Working Hours:</strong> Mon–Sat, 8:00am – 6:00pm</div>
+                </div>
+
+                <!-- Form -->
+                <form class="contact-form reveal" style="margin-top: 2rem;">
+                    <div class="form-group">
+                        <label for="name">Full Name <span>*</span></label>
+                        <input type="text" id="name" name="name" placeholder="e.g. Sarah Johnson" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address <span>*</span></label>
+                        <input type="email" id="email" name="email" placeholder="e.g. sarah@email.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number <span>*</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="e.g. +234 812 345 6789" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Type <span>*</span></label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="wedding">Wedding Catering</option>
+                            <option value="corporate">Corporate Events</option>
+                            <option value="birthday">Birthday Parties</option>
+                            <option value="home">Home Parties</option>
+                            <option value="delivery">Delivery Order</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message <span>*</span></label>
+                        <textarea id="message" name="message" rows="5"
+                            placeholder="Tell us about your event, preferred dates, or any special request..."
+                            required></textarea>
+                    </div>
+
+                    <!-- Optional Privacy Note -->
+                    <small class="privacy-note reveal"
+                        style="display: block; margin-bottom: 1rem; color: var(--accent);">
+                        🔒 We respect your privacy. Your information is safe with us and will never be shared.
+                    </small>
+
+                    <!-- Success Message Placeholder -->
+                    <div id="formSuccess" class="reveal"
+                        style="display: none; background: #e0ffe4; color: #2e7d32; padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+                        ✅ Thank you! Your message has been received.
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 <strong>FOODmate</strong>. All rights reserved.</p>|
+                <p class="footer-note">Baked with ❤️ in Nigeria — proudly serving Lagos, Ogun, and beyond.</p>|
+                <p>Developed by OCM</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
